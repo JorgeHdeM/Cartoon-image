@@ -70,24 +70,42 @@ Libraries needed:
 ### Prerequisites
 
 Install Python
-```sh
+  ```sh
   Python 3.9.8 or greater
-  ```
-Install Pytorch with CUDA
-```sh
-  pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
   ```
 Install pip
   ```sh
   python get-pip.py
   ```
-
+Install virtualenv library
+  ```sh
+  pip install virtualenv
+  ```
+Give your environment a name
+  ```sh
+  virtualenv my_env
+  ```
+Initialize virtual environment
+  ```sh
+  cd my_env
+  ```
+  ```sh
+  Scripts\activate
+  ```
+Install PyTorch and CUDA toolkit
+  ```sh
+  pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
+  ```
 ### Installation
 1. Clone the repo
    ```sh
    git clone https://github.com/JorgeHdeM/Cartoon-image.git
    ```
-2. Install python libraries in the cloned main folder
+2. Go to the cloned repo
+   ```sh
+   cd Cartoon-image
+   ```
+3. Install python libraries from requirements.txt
    ```sh
    pip install -r requirements.txt
    ```
