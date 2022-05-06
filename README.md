@@ -84,9 +84,9 @@ Install pip
    ```sh
    git clone https://github.com/JorgeHdeM/Cartoon-image.git
    ```
-2. Install NPM packages
+2. Install python libraries in the cloned main folder
    ```sh
-   pip install requirements
+   pip install -r requirements.txt
    ```
 <p align="right">(<a href="#top">back to top</a>)</p>
 
