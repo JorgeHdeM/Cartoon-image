@@ -49,7 +49,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is an open source code that uses VGG architecure to extract the shape of a given image and uses an iterative loop in order to lower the error mergering the style of the Style image to the original image.
+This is an open source code that uses VGG architecure to extract the features of a given image and uses an iterative loop in order to lower the error mergering the style of the Style image to the original image.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
