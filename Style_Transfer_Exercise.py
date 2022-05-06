@@ -56,8 +56,6 @@ style = load_image('images/mariana.jpg', shape=content.shape[-2:]).to(device)
 
 # Unnormalizing an image and display
 def im_convert(tensor):
-    """ Display a tensor as an image. """
-    
     image = tensor.to("cpu").clone().detach()
     image = image.numpy().squeeze()
     image = image.transpose(1,2,0)
@@ -65,13 +63,6 @@ def im_convert(tensor):
     image = image.clip(0, 1)
 
     return image
-
-
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(20, 10))
-ax1.imshow(im_convert(content))
-ax2.imshow(im_convert(style))
-
-
 
 def get_features(image, model, layers=None):
     if layers is None:
@@ -119,8 +110,10 @@ show_every = 400
 
 # iteration hyperparameters
 optimizer = optim.Adam([target], lr=0.003)
-steps = 2500
+steps = 2500  # decide how many iterations to update your image (5000)
+names = np.arange(int(2500/400))
 
+j = 0
 for ii in range(1, steps+1):
     target_features = get_features(target, vgg)
     content_loss = torch.mean((target_features['conv4_2'] - content_features['conv4_2'])**2)
@@ -141,14 +134,10 @@ for ii in range(1, steps+1):
     optimizer.zero_grad()
     total_loss.backward()
     optimizer.step()
-    
     if  ii % show_every == 0:
+        j += 1
         print('Total loss: ', total_loss.item())
+        plt.axis('off')
         plt.imshow(im_convert(target))
-        plt.savefig(f'{total_loss.item()}.png',bbox_inches='tight')
+        plt.savefig(f'{names[j]}_result.png',bbox_inches='tight')
 
-
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(20, 10))
-ax1.imshow(im_convert(content))
-ax2.imshow(im_convert(target))
-plt.savefig('Cartooned6.png',bbox_inches='tight')
