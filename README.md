@@ -111,7 +111,11 @@ Install PyTorch and CUDA toolkit
    ```
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
+### Running the code
+Give your environment a name, it saves all the images for you to choose which model has your desired outcome.
+  ```sh
+  python Style_Transfer_Exercise.py
+  ```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -122,6 +126,9 @@ VGG architecure was used to extract one image shape and merges it with another.
 
 ### Use it yourself:
 Change line 52 'load_img_name' and change it four your desired picture which needs to be in 'images' folder alongside the style picture which is 'mariana.jpg'.
+
+Modify the hyperparameters `show_every` and `step` in lines 118 and 122 respecitvely to alter the iterations and consequently, the image generated.
+If you want the style to appear more aggresively in the original image, modify `style_weight` in line 115, making it bigger such as 1e9.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
