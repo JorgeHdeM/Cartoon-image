@@ -128,9 +128,6 @@ for ii in range(1, steps+1):
     style_loss = 0
     for layer in style_weights:
         target_feature = target_features[layer]
-        _, d, h, w = target_feature.shape
-        
-        target_feature = target_features[layer]
         target_gram = gram_matrix(target_feature)
         _, d, h, w = target_feature.shape
         
