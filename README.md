@@ -1,11 +1,3 @@
-This code runs in a GPU if its available, it took 5-10 minutes in a GTX 1660Ti
-If there are no CUDA cores available, it will run in the CPU but it will take FOREVER.
-
-VGG architecure was used to extract one image shape and merges it with another.
-
-TO MAKE IT WORK:
-Change line 52 'load_img_name' and change it four your desired picture which needs to be in 'images' folder alongside the style picture which is 'mariana.jpg'.
-#
 <div id="top"></div>
 
 [![MIT License][license-shield]][license-url]
@@ -78,113 +70,62 @@ Libraries needed:
 ## Getting Started
 ### Prerequisites
 
-First we install the library requirements.
-* npm
+Install Python
+```sh
+  Python 3.9.8 or greater
+  ```
+Install pip
   ```sh
-  npm install npm@latest -g
+  python get-pip.py
   ```
 
 ### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/JorgeHdeM/Cartoon-image.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
-   npm install
+   pip install requirements
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+This code runs in a GPU if its available, it took 5-10 minutes in a GTX 1660Ti
+If there are no CUDA cores available, it will run in the CPU but it will take FOREVER.
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+VGG architecure was used to extract one image shape and merges it with another.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+### Use it yourself:
+Change line 52 'load_img_name' and change it four your desired picture which needs to be in 'images' folder alongside the style picture which is 'mariana.jpg'.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Any contributions you make are **greatly appreciated**.
 Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- LICENSE -->
 ## License
-
 Distributed under the MIT License. See `LICENSE.txt` for more information.
-
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- CONTACT -->
 ## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
+Linkedin - [@JorgeAntonioHernandezMendoza](https://www.linkedin.com/in/jorge-antonio-hern%C3%A1ndez-mendoza-746315169/) - jorgehdezm10@gmail.com
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [Udacity](https://www.udacity.com/online-learning-for-individuals?utm_source=gsem_brand&utm_medium=ads_r&utm_campaign=12949811881_c_individuals&utm_term=123473112164&utm_keyword=udacity_e&gclid=CjwKCAjwjtOTBhAvEiwASG4bCCBOyCSp16IGqfdaQMth1pMwJYpYdk-1ww6ZMwpchw6g0fx2VIaM4xoCc8wQAvD_BwE)
+* [VGG architecture](https://arxiv.org/abs/1409.1556)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
