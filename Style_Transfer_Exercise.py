@@ -119,7 +119,7 @@ show_every = 400
 
 # iteration hyperparameters
 optimizer = optim.Adam([target], lr=0.003)
-steps = 2500  # decide how many iterations to update your image (5000)
+steps = 2500
 
 for ii in range(1, steps+1):
     target_features = get_features(target, vgg)
