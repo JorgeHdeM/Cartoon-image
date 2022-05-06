@@ -73,6 +73,10 @@ Install Python
 ```sh
   Python 3.9.8 or greater
   ```
+Install Pytorch with CUDA
+```sh
+  pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
+  ```
 Install pip
   ```sh
   python get-pip.py
