@@ -116,6 +116,7 @@ Give your environment a name, it saves all the images for you to choose which mo
   ```sh
   python Style_Transfer_Exercise.py
   ```
+It will generate 5 output images for you to choose varying the style implemented in the original image.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
