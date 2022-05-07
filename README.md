@@ -126,7 +126,7 @@ If there are no CUDA cores available, it will run in the CPU but it will take FO
 VGG architecure was used to extract one image shape and merges it with another.
 
 ### Use it yourself:
-Change line 52 'load_img_name' and change it four your desired picture which needs to be in 'images' folder alongside the style picture which is 'mariana.jpg'.
+Change line 52 `load_img_name` for your desired picture which needs to be in `\images` folder, alongside the style picture which is `mariana.jpg`.
 
 Modify the hyperparameters `show_every` and `step` in lines 118 and 122 respecitvely to alter the iterations and consequently, the image generated.
 If you want the style to appear more aggresively in the original image, modify `style_weight` in line 115, making it bigger such as 1e9.
