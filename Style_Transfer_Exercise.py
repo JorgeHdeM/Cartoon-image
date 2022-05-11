@@ -136,9 +136,9 @@ for ii in range(1, steps+1):
     optimizer.step()
     if  ii % show_every == 0:
         #print('Total loss: ', total_loss.item())
-        print(f'Picture {names[j]} saved.')
+        print(f'Picture {names[j]+1} saved.')
         plt.axis('off')
         plt.imshow(im_convert(target))
-        plt.savefig(f'{names[j]}_result.png',bbox_inches='tight')
+        plt.savefig(f'Image {names[j]+1}.png',bbox_inches='tight')
         j += 1
 
