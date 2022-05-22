@@ -49,7 +49,7 @@ def load_image(img_path, max_size=600, shape=None):
 
 
 # load in content and style image
-load_img_name = 'jorge.jpg'
+load_img_name = 'forflais.png'
 content = load_image(f'images/{load_img_name}').to(device)
 style = load_image('images/mariana.jpg', shape=content.shape[-2:]).to(device)
 
