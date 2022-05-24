@@ -112,7 +112,7 @@ show_every = 400
 optimizer = optim.Adam([target], lr=0.003)
 steps = 2500  # decide how many iterations to update your image (5000)
 names = np.arange(int(2500/400))
-print(f'{names} pictures will be generated')
+print(f'{len(names)} pictures will be generated.')
 
 j = 0
 for ii in range(1, steps+1):
